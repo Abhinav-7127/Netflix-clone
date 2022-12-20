@@ -1,0 +1,1 @@
+document.getElementById('showcase_after').style.height = '100%';
