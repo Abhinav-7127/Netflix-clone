@@ -1,1 +1,1 @@
-
+document.querySelector('.faqs').addEventListener() 
