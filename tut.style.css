@@ -43,7 +43,7 @@ p{
 }
 
 #showcase_after{
-    background: url(/images/netflix-bg.jpg) no-repeat center center/cover;
+    background: url(images/netflix-bg.jpg) no-repeat center center/cover;
     width: 100%;
     position: absolute;
     top: 0;
