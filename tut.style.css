@@ -192,25 +192,39 @@ footer h1{
     align-items: center;
 }
 
-.ans{
+.faq-containers.hide .ans{
     opacity: 0;
     overflow: hidden;
     position: absolute;
     transition: all 0s;
-    height: 0;
+    max-height: 0%;
     transform: translateY(-15px);
 }
 
-.faqs:focus ~ .ans {
+.faq-containers.show .ans {
     opacity: 1;
     height: 100%;
     position: relative;
-    -webkit-transition:all 0s;
-    -moz-transition: all 0s;
-    -ms-transition: all 0s;
-    -o-transition: all 0s;
-    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s linear;
     transform: translateY(0px);
+}
+
+.faq-containers.show button svg{
+    transform: rotate(-135deg);
+    transition: all 0.5s linear;
+}
+
+.faq-containers.hide button svg{
+    transform: rotate(0deg);
+    transition: all 0.25s linear;
+}
+
+button{
+    border: none;
 }
 
 
