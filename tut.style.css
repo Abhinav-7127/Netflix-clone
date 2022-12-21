@@ -57,30 +57,15 @@ p{
 
 .showcase-top{
     width: 100%;
+    padding: 25px 5%;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
     background: linear-gradient(rgba(0,0,0), rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0,0));
     z-index: 3;
-}
-
-.showcase-top img{
-    width: 40vw;
-}
-
-.showcase-top a{
-    display: inline-block;
-    padding: 0.1rem 0.75rem;
-}
-.showcase-top a span{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .btn{
@@ -102,18 +87,50 @@ p{
 }
 
 .btn-rounded{
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .btn-xl{
-    font-size: 2rem;
-    padding: 0.8rem 1.3rem;
-    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5.6px 16px;
+
+}
+
+#GetStarted {
+    /* margin: 30px auto; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    width: fit-content;
+}
+
+#GetStarted svg{
+    margin: 5px;
+}
+
+#GetStarted span {
+    padding: 5.6px 0px;
+}
+
+.showcase-top svg{
+    font-size: 16px;
+    width: 88.79px;
+}
+
+.showcase-top a{
+    display: inline-block;
+    font-size: 14.8px;
+    font-weight: 400;
+    padding: 4px 8px;
+}
+
+.showcase-top a p{
+ margin: 0;
 }
 
 .showcase-content{
-    padding-top: 20vh ;
-    padding-bottom: 7vh;
+    padding-top: 130px ;
+    padding-bottom: 50px;
     margin: auto;
     text-align: center;
     max-width: 92vw;
@@ -121,12 +138,12 @@ p{
 }
 
 .showcase-content h1 {
-    font-size: 3rem;
+    font-size: 28px;
 }
 
 .showcase-content p, .sections p{
-    font-size: 1.25rem;
-    margin: 3vh auto;
+    font-size: 18px;
+    margin: 20px auto;
 }
 
 .showcase-content a {
@@ -149,7 +166,7 @@ p{
 }
 
 .sections h1{
-    font-size: 2rem;
+    font-size: 26px;
 }
 
 .sections img {
@@ -176,8 +193,13 @@ footer h1{
 .faq-containers div, .faq-containers button{
     width: 100%;
     background-color: rgba(200, 200, 200, 0.1);
-    padding: 1.25rem;
-    font-size: 1rem;
+    padding: 21.60px 14.40px ;
+    font-size: 18px;
+}
+
+.faq-containers p{
+    padding: 0;
+    margin: 0;
 }
 
 .faq-containers hr {
@@ -226,6 +248,19 @@ footer h1{
 button{
     border: none;
 }
+
+@media (min-width:400px) and (max-width: 549px){
+    .showcase-content{
+        padding-top: 145px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 950px){
+    .showcase-content{
+        padding-top: 190px;
+    }
+}
+
 
 
 
